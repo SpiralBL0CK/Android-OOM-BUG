@@ -1,0 +1,51 @@
+01-04 17:35:34.083 15274 15527 E AndroidRuntime: !@*** FATAL EXCEPTION IN SYSTEM PROCESS: Binder:15274_4
+01-04 17:35:34.083 15274 15527 E AndroidRuntime: java.lang.OutOfMemoryError: Failed to allocate a 4314120048 byte allocation with 12582912 free bytes and 592MB until OOM, target footprint 62760512, growth limit 671088640
+01-04 17:35:34.083 15274 15527 E AndroidRuntime:        at java.util.ArrayList.<init>(ArrayList.java:166)
+01-04 17:35:34.083 15274 15527 E AndroidRuntime:        at android.os.Parcel.createStringArrayList(Parcel.java:2967)
+01-04 17:35:34.083 15274 15527 E AndroidRuntime:        at com.samsung.android.aod.IAODManager$Stub.onTransact(IAODManager.java:257)
+01-04 17:35:34.083 15274 15527 E AndroidRuntime:        at android.os.Binder.execTransactInternal(Binder.java:1195)
+01-04 17:35:34.083 15274 15527 E AndroidRuntime:        at android.os.Binder.execTransact(Binder.java:1159)
+01-04 17:35:34.298 15841 16051 E AndroidRuntime: FATAL EXCEPTION: ImsServiceStub
+01-04 17:35:34.298 15841 16051 E AndroidRuntime: Process: com.sec.imsservice, PID: 15841
+01-04 17:35:34.298 15841 16051 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+01-04 17:35:34.303 16468 16468 E AndroidRuntime: FATAL EXCEPTION: main
+01-04 17:35:34.303 16468 16468 E AndroidRuntime: Process: com.android.bluetooth, PID: 16468
+01-04 17:35:34.303 16468 16468 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+01-04 17:35:34.323 15597 15597 E AndroidRuntime: FATAL EXCEPTION: main
+01-04 17:35:34.323 15597 15597 E AndroidRuntime: Process: com.android.systemui, PID: 15597
+01-04 17:35:34.323 15597 15597 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+01-04 17:35:34.380 15574 15574 E AndroidRuntime: FATAL EXCEPTION: main
+01-04 17:35:34.380 15574 15574 E AndroidRuntime: Process: com.android.phone, PID: 15574
+01-04 17:35:34.380 15574 15574 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+01-04 17:35:34.470  3824 16540 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 16540 (m_resultCallbac), pid 3824 (provider@4.0-se)
+01-04 17:35:34.616 16603 16603 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+01-04 17:35:34.617 16603 16603 F DEBUG   : Build fingerprint: 'samsung/a20eeea/a20e:11/RP1A.200720.012/A202FXXU3CVC1:user/release-keys'
+01-04 17:35:34.617 16603 16603 F DEBUG   : Revision: '3'
+01-04 17:35:34.617 16603 16603 F DEBUG   : ABI: 'arm'
+01-04 17:35:34.618 16603 16603 F DEBUG   : Timestamp: 2024-01-04 17:35:34+0200
+01-04 17:35:34.618 16603 16603 F DEBUG   : pid: 3824, tid: 16540, name: m_resultCallbac  >>> /vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service <<<
+01-04 17:35:34.619 16603 16603 F DEBUG   : uid: 1047
+01-04 17:35:34.619 16603 16603 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+01-04 17:35:34.619 16603 16603 F DEBUG   : Abort message: 'Failed HIDL return status not checked. Usually this happens because of a transport error (error parceling, binder driver, or from unparceling). If you see this in code calling into "Bn" classes in for a HAL server process, then it is likely that the code there is returning transport errors there (as opposed to errors defined within its protocol). Error is: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: ''
+01-04 17:35:34.619 16603 16603 F DEBUG   :     r0  00000000  r1  0000409c  r2  00000006  r3  f115cbb8
+01-04 17:35:34.619 16603 16603 F DEBUG   :     r4  f115cbcc  r5  f115cbb0  r6  00000ef0  r7  0000016b
+01-04 17:35:34.619 16603 16603 F DEBUG   :     r8  f115cbb8  r9  f115cbc8  r10 f115cbe8  r11 f115cbd8
+01-04 17:35:34.619 16603 16603 F DEBUG   :     ip  0000409c  sp  f115cb88  lr  f3f11dd5  pc  f3f11de8
+01-04 17:35:34.697 16603 16603 F DEBUG   : backtrace:
+01-04 17:35:34.697 16603 16603 F DEBUG   :       #00 pc 00062de8  /apex/com.android.runtime/lib/bionic/libc.so (abort+172) (BuildId: fef5b751123147ea65bf3f4f798c9518)
+01-04 17:35:34.698 16603 16603 F DEBUG   :       #01 pc 00004ceb  /system/lib/liblog.so (__android_log_default_aborter+6) (BuildId: 3fcead474cd0ecbdafb529ff176b0d13)
+01-04 17:35:34.698 16603 16603 F DEBUG   :       #02 pc 0000d2b3  /apex/com.android.vndk.v30/lib/libbase.so (android::base::LogMessage::~LogMessage()+222) (BuildId: 96c3c68af17a377328bb6612d753dbc6)
+01-04 17:35:34.698 16603 16603 F DEBUG   :       #03 pc 00030f33  /apex/com.android.vndk.v30/lib/libhidlbase.so (android::hardware::details::return_status::assertOk() const+138) (BuildId: 3947303c571644640642a031e67850be)
+01-04 17:35:34.698 16603 16603 F DEBUG   :       #04 pc 00030f5b  /apex/com.android.vndk.v30/lib/libhidlbase.so (android::hardware::details::return_status::~return_status()+10) (BuildId: 3947303c571644640642a031e67850be)
+01-04 17:35:34.703 16603 16603 F DEBUG   :       #05 pc 00020fad  /vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so (vendor::samsung::hardware::camera::device::V5_0::implementation::SehCameraDeviceSession::SehResultBatcher::sehInvokeProcessCaptureResultCallback(android::hardware::hidl_vec<vendor::samsung::hardware::camera::device::V5_0::SehCaptureResult>&, bool)+400) (BuildId: 4cd1280657c1d78c1fecb36e363ccb5c)
+01-04 17:35:34.703 16603 16603 F DEBUG   :       #06 pc 000200cb  /vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so (vendor::samsung::hardware::camera::device::V5_0::implementation::SehCameraDeviceSession::SehResultBatcher::sehProcessOneCaptureResult(vendor::samsung::hardware::camera::device::V5_0::SehCaptureResult&)+90) (BuildId: 4cd1280657c1d78c1fecb36e363ccb5c)
+01-04 17:35:34.703 16603 16603 F DEBUG   :       #07 pc 0001f561  /vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so (vendor::samsung::hardware::camera::device::V5_0::implementation::SehCameraDeviceSession::SehResultBatcher::sehProcessCaptureResult(vendor::samsung::hardware::camera::device::V5_0::SehCaptureResult&)+108) (BuildId: 4cd1280657c1d78c1fecb36e363ccb5c)
+01-04 17:35:34.704 16603 16603 F DEBUG   :       #08 pc 0001b8c1  /vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so (vendor::samsung::hardware::camera::device::V5_0::implementation::SehCameraDeviceSession::sSehProcessCaptureResult(camera3_callback_ops const*, camera3_capture_result const*)+720) (BuildId: 4cd1280657c1d78c1fecb36e363ccb5c)
+01-04 17:35:34.705 16603 16603 F DEBUG   :       #09 pc 000de251  /vendor/lib/libexynoscamera3.so (android::ExynosCameraRequestManager::m_callbackOpsCaptureResult(camera3_capture_result*, android::EXYNOS_REQUEST_RESULT::TYPE)+68) (BuildId: 9f59bb4f87448493272629beaa72b4b4)
+01-04 17:35:34.705 16603 16603 F DEBUG   :       #10 pc 000de08b  /vendor/lib/libexynoscamera3.so (android::ExynosCameraRequestManager::m_sendCallbackResult(android::sp<android::ExynosCameraRequest>, android::sp<android::ExynosCameraRequestResult>)+366) (BuildId: 9f59bb4f87448493272629beaa72b4b4)
+01-04 17:35:34.705 16603 16603 F DEBUG   :       #11 pc 000d9a4b  /vendor/lib/libexynoscamera3.so (android::ExynosCameraRequestManager::m_resultCallbackThreadFunc()+326) (BuildId: 9f59bb4f87448493272629beaa72b4b4)
+01-04 17:35:34.706 16603 16603 F DEBUG   :       #12 pc 000a1f1b  /vendor/lib/libexynoscamera3.so (ExynosCameraThread<android::FrameWorker>::threadLoop()+24) (BuildId: 9f59bb4f87448493272629beaa72b4b4)
+01-04 17:35:34.706 16603 16603 F DEBUG   :       #13 pc 0000ef0d  /apex/com.android.vndk.v30/lib/libutils.so (android::Thread::_threadLoop(void*)+304) (BuildId: 4ce4bcaabdb4066bfee718e8cf6b3059)
+01-04 17:35:34.706 16603 16603 F DEBUG   :       #14 pc 0000e9cd  /apex/com.android.vndk.v30/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 4ce4bcaabdb4066bfee718e8cf6b3059)
+01-04 17:35:34.706 16603 16603 F DEBUG   :       #15 pc 000aaf33  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: fef5b751123147ea65bf3f4f798c9518)
+01-04 17:35:34.707 16603 16603 F DEBUG   :       #16 pc 000642e3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: fef5b751123147ea65bf3f4f798c9518)
